@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Jewels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+
+            <div class="logo">
+                <h3>💎 Glamour Jewels</h3>
+            </div>
+
+            <div class="location">
+                <p>📍 Deliver to: Bengaluru, 560076</p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="search_input"
+                placeholder="Search Jewellery, Rings or Necklaces...">
+            </div>
+
+            <div class="user_action">
+
+                <div class="wishlist-icon" onclick="showWishlist()">
+                <p>❤️</p>
+                    <span id="wishlist-count">0</span>
+                </div>
+
+                <div class="cart-icon">
+                    🛒
+                    <span class="cart-number">0</span>
+                </div>
+                <div class="cart-panel" id="cartpanel">
+
+              <div class="cart-header">
+               <h2>Your Cart</h2>
+              <button id="closecart">✖</button>
+            </div>
+
+               <p id="cart-empty">Your cart is empty</p>
+
+        </div>
+      </div>
+   </div>
+</header>
+
+  <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+
+            <h1>Discover Your Perfect Shine</h1>
+
+            <p>Explore beautiful jewellery and make every moment special.</p>
+
+            <a href="#products">Shop Now</a>
+
+        </div>
+    </section>
+
+
+    <!-- Jewellery Categories -->
+    <section class="categories">
+        <div class="container">
+
+            <h2 class="section-title">Popular Jewellery Categories</h2>
+
+            <div class="container-grid">
+
+                <div class="category-card">
+                    <div class="card-img">
+                        <img src="https://images.pexels.com/photos/39329114/pexels-photo-39329114.jpeg"
+                        alt="Necklace" width="500">
+                    </div>
+                    <h3>Necklaces</h3>
+                    <p>Beautiful necklaces for every occasion.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="card-img">
+                        <img src="https://media.istockphoto.com/id/525320873/photo/diamond-ring.jpg?b=1&s=612x612&w=0&k=20&c=OefbwcIH8vR2XMOgt2HrxwMwY9KJikV7_yYOdKw8e1o="
+                        alt="Rings" width="500">
+                    </div>
+                    <h3>Rings</h3>
+                    <p>Elegant rings with stunning designs.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="card-img">
+                        <img src="https://images.pexels.com/photos/33154633/pexels-photo-33154633.jpeg"
+                        alt="Earrings" width="500">
+                    </div>
+                    <h3>Earrings</h3>
+                    <p>Trendy earrings for a stylish look.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="card-img">
+                        <img src="https://images.pexels.com/photos/40523380/pexels-photo-40523380.jpeg"
+                        alt="Bracelets" width="500">
+                    </div>
+                    <h3>Bracelets</h3>
+                    <p>Stylish bracelets for everyday wear.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trending Jewellery Collections -->
+    <section class="collections">
+        <div class="container">
+
+            <h2 class="section-title">Trending Jewellery Collections</h2>
+
+            <div class="collection-grid">
+
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.pexels.com/photos/29385412/pexels-photo-29385412.jpeg"
+                        alt="Gold Collection" width="500">
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-name">Gold Collection</div>
+                        <div class="jewellery-details">Traditional Gold Jewellery</div>
+                        <div class="rating">⭐ 4.8</div>
+                        <div class="collection-label">Premium Quality</div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.pexels.com/photos/32988532/pexels-photo-32988532.jpeg"
+                        alt="Diamond Collection" width="500">
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-name">Diamond Collection</div>
+                        <div class="jewellery-details">Elegant Diamond Designs</div>
+                        <div class="rating">⭐ 4.9</div>
+                        <div class="collection-label">Premium Quality</div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://media.istockphoto.com/id/1452491459/photo/traditional-silver-jewelry.jpg?b=1&s=612x612&w=0&k=20&c=IkgevsW3x9rMo8FL3j1WZmMpEHvEbYf9tGBTA0HDIww="
+                        alt="Silver Collection" width="500">
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-name">Silver Collection</div>
+                        <div class="jewellery-details">Beautiful Silver Jewellery</div>
+                        <div class="rating">⭐ 4.5</div>
+                        <div class="collection-label">Trendy Designs</div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.pexels.com/photos/16210460/pexels-photo-16210460.jpeg"
+                        alt="Pearl Collection" width="500">
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-name">Pearl Collection</div>
+                        <div class="jewellery-details">Classic Pearl Jewellery</div>
+                        <div class="rating">⭐ 4.7</div>
+                        <div class="collection-label">Elegant Designs</div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.pexels.com/photos/28347073/pexels-photo-28347073.jpeg"
+                        alt="Bridal Collection" width="500">
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-name">Bridal Collection</div>
+                        <div class="jewellery-details">Special Wedding Jewellery</div>
+                        <div class="rating">⭐ 4.9</div>
+                        <div class="collection-label">Exclusive Designs</div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.pexels.com/photos/10820346/pexels-photo-10820346.jpeg"
+                        alt="Fashion Collection" width="500">
+                    </div>
+                    <div class="collection-info">
+                        <div class="collection-name">Fashion Collection</div>
+                        <div class="jewellery-details">Modern Fashion Jewellery</div>
+                        <div class="rating">⭐ 4.6</div>
+                        <div class="collection-label">Latest Designs</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Popular Jewellery Products -->
+    <section class="jewellery-products" id="products">
+        <div class="container">
+
+            <h2 class="section-title">Popular Jewellery</h2>
+
+            <div class="jewellery-grid">
+
+                <!-- Product 1 -->
+                <div class="jewellery-card">
+
+                    <div class="jewellery-img">
+                        <img src="https://images.pexels.com/photos/20768279/pexels-photo-20768279.jpeg"
+                        alt="Gold Necklace" width="500">
+                    </div>
+
+                    <button class="wishlist-btn"
+                    onclick="addWishlist('Gold Necklace',
+                    'https://images.pexels.com/photos/20768279/pexels-photo-20768279.jpeg',
+                    'Rs. 85,000', this)">♡</button>
+
+                    <div class="jewellery-info">
+                        <div class="jewellery-name">Gold Necklace</div>
+                        <div class="jewellery-details">Beautiful 22K traditional gold necklace.</div>
+                        <div class="jewellery-price">Rs. 85,000</div>
+                        <div class="product-action">
+                            <button onclick="addCart()">ADD</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="jewellery-card">
+
+                    <div class="jewellery-img">
+                        <img src="https://images.pexels.com/photos/6993815/pexels-photo-6993815.jpeg"
+                        alt="Diamond Ring" width="500">
+                    </div>
+
+                    <button class="wishlist-btn"
+                    onclick="addWishlist('Diamond Ring',
+                    'https://images.pexels.com/photos/6993815/pexels-photo-6993815.jpeg',
+                    'Rs. 45,000', this)">♡</button>
+
+                    <div class="jewellery-info">
+                        <div class="jewellery-name">Diamond Ring</div>
+                        <div class="jewellery-details">Premium diamond ring with elegant design.</div>
+                        <div class="jewellery-price">Rs. 45,000</div>
+                        <div class="product-action">
+                            <button onclick="addCart()">ADD</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product 3 -->
+                <div class="jewellery-card">
+
+                    <div class="jewellery-img">
+                        <img src="https://images.pexels.com/photos/13645844/pexels-photo-13645844.jpeg"
+                        alt="Gold Earrings" width="500">
+                    </div>
+
+                    <button class="wishlist-btn"
+                    onclick="addWishlist('Gold Earrings',
+                    'https://images.pexels.com/photos/13645844/pexels-photo-13645844.jpeg',
+                    'Rs. 28,000', this)">♡</button>
+
+                    <div class="jewellery-info">
+                        <div class="jewellery-name">Gold Earrings</div>
+                        <div class="jewellery-details">Stylish 22K gold earrings for women.</div>
+                        <div class="jewellery-price">Rs. 28,000</div>
+                        <div class="product-action">
+                            <button onclick="addCart()">ADD</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="jewellery-card">
+
+                    <div class="jewellery-img">
+                        <img src="https://images.pexels.com/photos/37401773/pexels-photo-37401773.jpeg"
+                        alt="Gold Bracelet" width="500">
+                    </div>
+
+                    <button class="wishlist-btn"
+                    onclick="addWishlist('Gold Bracelet',
+                    'https://images.pexels.com/photos/37401773/pexels-photo-37401773.jpeg',
+                    'Rs. 35,000', this)">♡</button>
+
+                    <div class="jewellery-info">
+                        <div class="jewellery-name">Gold Bracelet</div>
+                        <div class="jewellery-details">Premium gold bracelet with modern design.</div>
+                        <div class="jewellery-price">Rs. 35,000</div>
+                        <div class="product-action">
+                            <button onclick="addCart()">ADD</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product 5 -->
+                <div class="jewellery-card">
+
+                    <div class="jewellery-img">
+                        <img src="https://images.pexels.com/photos/16109300/pexels-photo-16109300.jpeg"
+                        alt="Silver Jewellery" width="500">
+                    </div>
+
+                    <button class="wishlist-btn"
+                    onclick="addWishlist('Silver Jewellery',
+                    'https://images.pexels.com/photos/16109300/pexels-photo-16109300.jpeg',
+                    'Rs. 8,500', this)">♡</button>
+
+                    <div class="jewellery-info">
+                        <div class="jewellery-name">Silver Jewellery</div>
+                        <div class="jewellery-details">Beautiful sterling silver jewellery.</div>
+                        <div class="jewellery-price">Rs. 8,500</div>
+                        <div class="product-action">
+                            <button onclick="addCart()">ADD</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product 6 -->
+                <div class="jewellery-card">
+
+                    <div class="jewellery-img">
+                        <img src="https://images.pexels.com/photos/29038003/pexels-photo-29038003.jpeg"
+                        alt="Bridal Jewellery" width="500">
+                    </div>
+
+                    <button class="wishlist-btn"
+                    onclick="addWishlist('Bridal Jewellery Set',
+                    'https://images.pexels.com/photos/29038003/pexels-photo-29038003.jpeg',
+                    'Rs. 1,25,000', this)">♡</button>
+
+                    <div class="jewellery-info">
+                        <div class="jewellery-name">Bridal Jewellery Set</div>
+                        <div class="jewellery-details">Beautiful traditional bridal jewellery set.</div>
+                        <div class="jewellery-price">Rs. 1,25,000</div>
+                        <div class="product-action">
+                            <button onclick="addCart()">ADD</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Wishlist Section -->
+    <section class="wishlist-section" id="wishlist">
+
+        <div class="container">
+
+            <h2 class="section-title">❤️ My Wishlist</h2>
+
+            <div class="container-grid" id="wishlist-products">
+                <p>Your wishlist is empty!</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Special Jewellery Offers -->
+    <section class="offers">
+        <div class="container">
+
+            <h2 class="section-title">Special Jewellery Offers</h2>
+
+            <div class="container-grid">
+
+                <div class="special-card">
+                    <div class="spe-info">
+                        <h3>20% OFF</h3>
+                        <p>On your first jewellery purchase.</p>
+                        <span>Use: WELCOME20</span>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="spe-info">
+                        <h3>Free Delivery</h3>
+                        <p>On jewellery orders above Rs. 5,000.</p>
+                        <span>Use: FREEDEL</span>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="spe-info">
+                        <h3>10% OFF</h3>
+                        <p>On selected gold jewellery.</p>
+                        <span>Use: GOLD10</span>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="spe-info">
+                        <h3>15% OFF</h3>
+                        <p>On weekend jewellery shopping.</p>
+                        <span>Use: WEEKEND15</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>💎 Glamour Jewels</h3>
+                <p>Your favourite jewellery store bringing beauty,
+                elegance and shine to every special occasion.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#products">Jewellery Products</a></li>
+                    <li><a href="#wishlist">Wishlist</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Jewellery Care</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>📞 9876543210</p>
+                <p>✉️ support@glamourjewels.com</p>
+                <p>📍 Bengaluru, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Glamour Jewels. All rights reserved.</p>
+        </div>
+
+    </section>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
+
